@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?kb6u3');
+  src:  url('fonts/icomoon.eot?kb6u3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kb6u3') format('truetype'),
+    url('fonts/icomoon.woff?kb6u3') format('woff'),
+    url('fonts/icomoon.svg?kb6u3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /*speak: never;*/
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-briefcase:before {
+  content: "\e900";
+}
+.icon-bookmark:before {
+  content: "\e901";
+}
+.icon-star:before {
+  content: "\e902";
+}
+.icon-folder:before {
+  content: "\e903";
+}
+.icon-mail:before {
+  content: "\e904";
+}
+.icon-globe:before {
+  content: "\e905";
+}
+.icon-linkedin:before {
+  content: "\e906";
+}
+.icon-git-branch:before {
+  content: "\e907";
+}
+.icon-github:before {
+  content: "\e908";
+}
+.icon-external-link:before {
+  content: "\e909";
+}
+.icon-map-pin:before {
+  content: "\e90a";
+}
