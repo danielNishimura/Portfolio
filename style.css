@@ -31,15 +31,15 @@
   }
 
   p {
-      font-size: 16px;
+      font-size: 0.875rem;
   }
 
   .nome {
-    font-size: 23px;
+    font-size: 1.4rem;
   }
 
   h2 {
-      font-size: 20px;
+      font-size: 1.25rem;
   }
 
   .container {
@@ -49,22 +49,26 @@
   }
 
   .card  {
-    border: solid var(--body-bg-color);
-    border-radius: 20px;
-    padding-top: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    width: 348px;
     margin-bottom: 30px;
+}
 
+.card:hover {
+    border-color: var(--text-color);
+    border: solid 2px;
+    background-color: var(--body-bg-color);
+    transition: ease-in 0.5s;
 }
 
 /*##### card profile #####*/
 .profile {
     background-color: var(--bg-cards);
-    width: 348px;
-    height: 292px;
+    height: 304px;
     text-align: center;
 }
 
@@ -76,11 +80,12 @@
 }
 
 /*##### card dis links #####*/
+.cardLinks {
+    height: 300px;
+}
+
  .links {
-    width: 348px;
-    height: auto;
-    background-color: var(--bg-cards);
-    border: solid var(--body-bg-color);
+     width: 90%;
 }
 
 .linklist {
@@ -110,16 +115,16 @@
 
 .tecs {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .tecCard {
-    width: 100px;
+    width: 90px;
     height: 24px;
     padding: 6px 13px 5px 13px;
     border-radius: 30px;
     background-color: var(--bg-techs);
-    font-size: 10px;
+    font-size: 0.625rem;
     margin: 7px;
     text-align: center;
 }
@@ -132,6 +137,10 @@
     background-color: var(--text-color);
 }
 
+.cardTechnologies {
+    width: 90%;
+}
+
 .experiences {
     background-color: var(--bg-cards);
     border: solid var(--body-bg-color);
@@ -142,6 +151,9 @@
     border: solid var(--body-bg-color);
 }
 
+.cardEducation {
+    width: 90%;
+}
 /*##### Main #####*/
 
 .main {
@@ -165,7 +177,7 @@
 }
 
 .titulo {
-    font-size: 20px;
+    font-size: 1.25rem;
     height: 26px;
     margin: 30px;
 }
@@ -177,24 +189,23 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 0px 8px 30px 0px;
+    margin: 0px 30px 30px 0px;
 }
 
 .cardProject1, .cardProject2 {
-    display: inline-block;
+    display: flex;
     background-color: var(--bg-cards);
     border-radius: 20px;
     width: 35vw;
     height: 186px;
     margin: auto;
-    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardProjectContent {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    padding: 3vh;
+    width: 90%;
+    margin: auto;
 }
 
 .cardProjectContent p {
@@ -276,25 +287,30 @@
 /*##### Posts #####*/
 
 .recentposts {
-    background-color: var(--bg-cards);
+    display: flex;
+    width: 80%;
+    align-items: center;
 }
 
 .cardPost {
-    border-radius: 20px;
     width: 100%;
     padding: 30px;
     margin-bottom: 30px;
+    display: flex;
 }
 
 .postImage {
-    width: 128px;
-    height: 128px;
+    width: 11rem;
+    height: 11rem;
     border-radius: 20px;
     border: #00FF00 solid 1px;
+    margin-right: 20px;
+
 }
 
 .image {
-    display: flex;    
+    display: flex;
+    align-items: center;
 }
 
 .texto {
